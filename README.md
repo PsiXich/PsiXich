@@ -1,43 +1,54 @@
-# Hi there, I'm Artyom Shvidchenko 👋
+# Artyom Shvidchenko
 
-I am a C++ Software Engineer focused on system programming, multi-threaded high-load architectures, and network engineering. I enjoy solving complex algorithmic challenges, designing robust desktop applications, and contributing to open-source software.
+**C++ Software Engineer | Desktop applications, networking and concurrent programming**
 
----
+I develop C++ applications with a focus on network communication, desktop tooling and data processing. My projects explore Qt application architecture, asynchronous I/O, multithreading and practical algorithms.
 
-### 🛠️ Technical Toolkit
+## Technical skills
 
-* **Languages:** C++17 / C++20 / C++23 (Advanced standard features, RAII, Templates, Move semantics), C#, SQL, Python
-* **Libraries & Frameworks:** Qt 5/6 (Widgets, Network, WebSockets, Test), STL, Boost (Asio, Accumulators), spdlog, toml++
-* **Concurrency & Networking:** Asynchronous programming, TCP/IP, WebSockets, Client-Server architecture, Producer-Consumer pattern, multi-threaded synchronization (mutex, condition variables, atomics)
-* **Tools & Platforms:** CMake, Git, Docker, GCC/Clang, GDB, Linux, Windows
+| Area | Technologies |
+| --- | --- |
+| Languages | C++ (14/17/20/23), Python, C#, SQL |
+| Desktop development | Qt 5/6, Widgets, Model/View |
+| Networking | TCP/IP, UDP, WebSockets, MQTT, Boost.Asio |
+| Concurrency and data processing | C++ coroutines, threads, mutexes, condition variables, producer-consumer architecture, Boost.Accumulators |
+| Libraries and tools | STL, spdlog, toml++, CMake, Git, Qt Test, GCC/Clang, GDB |
+| Platforms | Windows, Linux |
 
----
+## Selected projects
 
-### 🚀 Featured Open-Source Projects
+### [NetScope Debug](https://github.com/PsiXich/NetScope_D_bug)
 
-#### 📡 [NetScope Debug](https://github.com/PsiXich/NetScope-Debug)
-*An open-source, cross-platform network debugging application tailored for monitoring and logging traffic.*
-* **Core Tech:** C++20, Qt 5/6 (Widgets, Network, WebSockets), CMake.
-* **Key Features:** Full TCP/WebSocket client-server implementation, real-time traffic logging, built-in HEX viewer, automated testing suite, and seamless deployment with Windows installer releases.
+A desktop tool for developing and debugging TCP, WebSocket, UDP and MQTT applications.
 
-#### 🧮 [CSV Median Calculator](https://github.com/PsiXich/CSV-Median-Calculator)
-*A high-performance streaming utility designed to process massive exchange trade data with minimal memory footprint.*
-* **Core Tech:** C++23, Boost.Accumulators, Multithreading, CMake.
-* **Key Features:** Implemented a multi-threaded **Producer-Consumer** architecture. Utilizes the **P² algorithm** to dynamically calculate medians over data streams without storing the full dataset in memory.
+- TCP and WebSocket clients and servers, UDP endpoints, and an MQTT 3.1.1 client.
+- Multiple connections, live traffic logging, text and hexadecimal payloads, and journal filters.
+- Automated Qt tests and a Windows x64 installer with bundled runtime dependencies.
 
----
+**Stack:** C++, Qt Widgets, Qt Network, Qt WebSockets, Qt MQTT, CMake, Qt Test. The project targets C++14 with Qt 5; Qt 6 requires C++17.
 
-### 📊 GitHub Stats & Technologies
+[Latest release](https://github.com/PsiXich/NetScope_D_bug/releases/latest) · [Build and usage documentation](https://github.com/PsiXich/NetScope_D_bug#readme)
 
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=PsiXich&show_icons=true&theme=tokyonight&count_private=true" alt="Artyom's GitHub Stats" height="180px" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PsiXich&layout=compact&theme=tokyonight&hide=html,css,python" alt="Top Languages" height="180px" />
-</p>
+### [CSV Median Calculator](https://github.com/PsiXich/csv_median_calculator)
 
----
+A command-line application for calculating running price-median estimates from CSV market data.
 
-### 📫 Connect with me
+- Single-threaded, multithreaded and batched-reading modes, with a producer-consumer processing pipeline.
+- P² median estimation through Boost.Accumulators, TOML configuration and CSV output.
+- Test-data generation and a benchmark mode for comparing execution modes.
 
-* **Telegram:** @CitraSSS
-* **Email:** drovin.asm@gmail.com
-* **Habr Career:** career.habr.com/moytracitrus
+**Stack:** C++23, Boost.Accumulators, Boost.Program_options, spdlog, toml++, CMake.
+
+### [TCP Logging Server](https://github.com/PsiXich/Server)
+
+A C++20 networking project using Boost.Asio coroutines to receive line-based log records from TCP clients and write per-client log files. Includes configuration parsing and a Python client test script.
+
+### [Linked List Serialization](https://github.com/PsiXich/Serialization-of-a-Doubly-Linked-List-with-Random-Pointers)
+
+A C++17 implementation of binary serialization and deserialization for a doubly linked list with arbitrary node references. Demonstrates pointer-to-index mapping and reconstruction of linked data structures.
+
+## Contact
+
+- Email: [drovin.asm@gmail.com](mailto:drovin.asm@gmail.com)
+- Telegram: [@CitraSSS](https://t.me/CitraSSS)
+- Habr Career: [career.habr.com/moytracitrus](https://career.habr.com/moytracitrus)
